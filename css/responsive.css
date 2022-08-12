@@ -1,0 +1,49 @@
+/* ------ Mobile Navigation ------ */
+
+@media screen and (max-width: 1199px) {
+  .mobile_nav_active .mobile_navigation {
+    left: 0;
+  }
+  .mobile_navigation {
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 350px;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 9997;
+  }
+  .mobile_nav_active {
+    overflow: hidden;
+  }
+  .mobile_nav_active .navbar {
+    left: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .mobile_nav_show {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    z-index: 9999;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .mobile_navigation {
+    display: none;
+  }
+  .mobile_nav_show {
+    display: none;
+  }
+  .__main_navbar .navbar {
+    flex: 1;
+  }
+}
