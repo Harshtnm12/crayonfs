@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ------- General Rules ------ */
 html {
@@ -13,9 +14,17 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: Poppins, sans-serif;
+  font-family: Open Sans, Helvetica, Arial, Verdana, sans-serif;
   color: #252525;
   font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, sans-serif;
 }
 a,
 a:hover {
@@ -32,10 +41,52 @@ ul {
   margin: 0;
 }
 
+section {
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
 .__site_wrapper {
   overflow: hidden;
   width: 100%;
   height: auto;
+}
+
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section_title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  letter-spacing: 2px;
+  color: var(--primary);
+}
+.section_title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section_title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary);
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 /* --------- Main top header css start -------- */
@@ -48,6 +99,7 @@ ul {
   margin-right: 1.2rem;
 }
 ._main_top_header ul > li > a {
+  font-family: Poppins, sans-serif;
   color: #fff;
   margin-left: 5px;
 }
@@ -76,6 +128,13 @@ ul {
 }
 
 /* ------- Main Navbar ------- */
+.__main_navbar {
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
 .__main_navbar .navbar > ul {
   display: flex;
   align-items: center;
@@ -86,6 +145,7 @@ ul {
   padding: 8px 16px;
 }
 .__main_navbar .navbar ul > li > a {
+  font-family: Poppins, sans-serif;
   position: relative;
 }
 .__main_navbar .navbar ul > li > a::before {
@@ -105,11 +165,20 @@ ul {
   width: 100%;
 }
 .navbar .others-option .option-item a.log-in {
+  font-family: Poppins, sans-serif;
   display: inline-block;
   padding: 15px 25px;
   background-color: var(--secondary);
   color: #fff;
   border-radius: 5px;
+}
+.__main_navbar.navbar_scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9996;
+  background-color: #fff;
 }
 
 /* ----- Mobile Navigation ------ */
@@ -122,6 +191,7 @@ ul {
   position: relative;
 }
 .mobile_navigation ul > li > a {
+  font-family: Poppins, sans-serif;
   display: block;
   padding: 10px 0;
 }
@@ -129,6 +199,7 @@ ul {
   color: var(--secondary);
 }
 .mobile_navigation .log-in {
+  font-family: Poppins, sans-serif;
   display: block;
   padding: 15px 25px;
   background-color: var(--secondary);
@@ -136,11 +207,30 @@ ul {
   border-radius: 5px;
   text-align: center;
 }
+#mortgage {
+  background-color: var(--primary);
+}
+#mortgage .nav-tabs {
+  border: 0;
+}
+#mortgage ul.nav-tabs button.nav-link {
+  font-family: Poppins, sans-serif;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 10px;
+}
+#mortgage ul.nav-tabs button.nav-link.active {
+  background-color: #fff;
+  border-radius: 0;
+  color: var(--primary);
+}
 
 /* ---------- Website Main Content --------- */
 
-/* ---- Hero -----  */
-._website_hero {
+/* ---- Home Page -----  */
+.website_hero {
   width: 100%;
   height: 80vh;
   background-image: url("../img/coverpic.jpg");
@@ -149,7 +239,7 @@ ul {
   background-position: center center;
   position: relative;
 }
-._website_hero::after {
+.website_hero::after {
   content: "";
   position: absolute;
   background-color: rgba(216, 156, 138, 0.5);
@@ -157,7 +247,80 @@ ul {
   height: 100%;
   z-index: 1;
 }
+.website_hero .hero_content {
+  width: 100%;
+  padding: 0 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+}
+.hero_content .hero_main_title {
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+.hero_content .hero_sub_title {
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
 
+.hero_content .explore_link {
+  padding: 12px 28px;
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+#blog .blog_card {
+  width: 100%;
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog_card .blog_card_img {
+  width: 100%;
+  overflow: hidden;
+}
+.blog_card .blog_card_img img {
+  transition: all 1s cubic-bezier(0, 0, 0.05, 1);
+}
+.blog_card:hover .blog_card_img img {
+  transform: scale(1.1);
+}
+.blog_card .blog_card_info {
+  padding: 20px;
+}
+.blog_card_info a.blog_heading {
+  display: block;
+  font-family: Poppins, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.blog_card_info a.blog_heading:hover {
+  color: var(--primary);
+}
+.blog_card_info a.blog_read_more {
+  display: inline-block;
+  font-family: Poppins, sans-serif;
+  padding: 12px 22px;
+  background-color: var(--primary);
+  color: #fff;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
 /* --------- Footer --------- */
 
 .footer {
@@ -189,12 +352,9 @@ ul {
 }
 .footer .footer_extra {
   margin-bottom: -20px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 30px;
+  text-align: center;
 }
 .footer .footer_extra p > a {
-    text-transform: uppercase;
-    text-decoration: underline;
+  text-decoration: underline;
 }

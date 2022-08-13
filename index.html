@@ -7,23 +7,18 @@
     <title>Crayon Finance Services</title>
     <link rel="icon" type="image/x-icon" href="img/favs.png" />
 
-    <!-- Bootstrap css start -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Bootstraps css end -->
+    <link rel="stylesheet" href="css/aos.css" />
 
-    <!-- Font icon start -->
     <link
       rel="stylesheet"
       href="css/bootstrap-icons-1.9.1/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/remixicon-2.5.0/remixicon.css" />
     <link rel="stylesheet" href="css/boxicons-2.1.0/css/boxicons.css" />
-    <!-- Font icon end -->
 
-    <!-- Main css start -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- Main css end -->
   </head>
 
   <body>
@@ -78,7 +73,7 @@
         >
           <div class="logo">
             <a href="index-7.html">
-              <img src="img/logo.png" class="black-logo" alt="Logo" />
+              <img src="img/logo.png" class="img-fluid" alt="Logo" />
             </a>
           </div>
           <nav class="navbar">
@@ -116,8 +111,491 @@
       <!-- ======== Main Navbar end ======== -->
 
       <!-- ======== Main Content start ======== -->
-      <div class="_website_main_content">
-        <div class="_website_hero"></div>
+      <div class="website_main_content">
+        <div class="website_hero">
+          <div class="hero_content">
+            <p
+              class="hero_main_title"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              84% of our clients who took
+            </p>
+            <p class="hero_sub_title" data-aos="fade" data-aos-delay="600">
+              Mortgages from us saved<br />
+              money on their monthly repayments.
+            </p>
+            <a
+              class="explore_link"
+              data-aos="zoom-in"
+              data-aos-delay="900"
+              href="#"
+              >Get Quote</a
+            >
+          </div>
+        </div>
+        <section id="about">
+          <div class="row">
+            <div class="col-12">
+              <div class="section_title">
+                <h2>About Us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <p>
+              Here at Crayon Financial Solutions Ltd we specialise in&nbsp;First
+              time buyer mortgages, Re mortgages, buy to let and various other
+              financial and insurance products.We source and arrange the most
+              suitable mortgage on your behalf from a comprehensive range of
+              lenders from&nbsp;the UK mortgage market.
+            </p>
+            <p>
+              Our team of Advisors encompass a wealth of experience in the
+              financial industry that ensures that we constantly strive for
+              excellence and continue to deliver exceptional service to our
+              clients. We offer our clients independent unbiased access to the
+              whole of the mortgage market. From your initial meeting which will
+              establish your needs and objectives, through to finding the best
+              mortgage backed up by the right level of protection to suit you
+              and your family.
+            </p>
+            <p>
+              Come and experience the Crayon Financial Solutions Ltd service for
+              yourself. We can be found at our office based in Hounslow. Our
+              mortgage consultants are available 9am – 6pm Monday to Friday and
+              9am to 4pm on Saturdays.
+            </p>
+          </div>
+        </section>
+        <section id="mortgage">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-12">
+                <ul
+                  class="nav nav-tabs justify-content-center"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="mortgage-challenge-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#mortgage-challenge"
+                      type="button"
+                      role="tab"
+                      aria-controls="mortgage-challenge"
+                      aria-selected="true"
+                    >
+                      Mortgage Challenge
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="home-insurance-challenge-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-insurance-challenge"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-insurance-challenge"
+                      aria-selected="false"
+                    >
+                      Home Insurance Challenge
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div
+                    class="tab-pane clearfix fade active show"
+                    id="mortgage-challenge"
+                    role="tabpanel"
+                    aria-labelledby="mortgage-challenge-tab"
+                  >
+                    <form action="">
+                      <div class="vc_col-sm-6">
+                        <label>
+                          Current Mortgage<br />
+                          <span class="wpcf7-form-control-wrap radio-601"
+                            ><span class="wpcf7-form-control wpcf7-radio"
+                              ><span class="wpcf7-list-item first"
+                                ><input
+                                  type="radio"
+                                  name="radio-601"
+                                  value="Residential"
+                                  checked="checked"
+                                /><span class="wpcf7-list-item-label"
+                                  >Residential</span
+                                ></span
+                              ><span class="wpcf7-list-item last"
+                                ><input
+                                  type="radio"
+                                  name="radio-601"
+                                  value="Buy to let"
+                                /><span class="wpcf7-list-item-label"
+                                  >Buy to let</span
+                                ></span
+                              ></span
+                            ></span
+                          >
+                        </label>
+                      </div>
+                      <div class="vc_col-sm-6">
+                        <label>
+                          How much is your property worth?*<br />
+                          <span class="wpcf7-form-control-wrap number-984"
+                            ><input
+                              type="number"
+                              name="number-984"
+                              value=""
+                              class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                              aria-invalid="false"
+                          /></span>
+                        </label>
+                      </div>
+                      <div class="vc_col-sm-6">
+                        <label>
+                          What is your outstanding mortgage balance?<br />
+                          <span class="wpcf7-form-control-wrap number-633"
+                            ><input
+                              type="number"
+                              name="number-633"
+                              value=""
+                              class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                              aria-invalid="false"
+                          /></span>
+                        </label>
+                      </div>
+                      <div class="vc_col-sm-6">
+                        <label
+                          >What interest rate are you currently paying?<br />
+                          <span class="wpcf7-form-control-wrap number-218"
+                            ><input
+                              type="number"
+                              name="number-218"
+                              value=""
+                              class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number"
+                              aria-required="true"
+                              aria-invalid="false"
+                          /></span>
+                        </label>
+                      </div>
+                      <div class="vc_col-sm-6">
+                        <label>
+                          Name<br />
+                          <span class="wpcf7-form-control-wrap text-172"
+                            ><input
+                              type="text"
+                              name="text-172"
+                              value=""
+                              size="40"
+                              class="wpcf7-form-control wpcf7-text"
+                              aria-invalid="false"
+                          /></span>
+                        </label>
+                      </div>
+                      <div class="vc_col-sm-6">
+                        <label>
+                          Email address<br />
+                          <span class="wpcf7-form-control-wrap email-129"
+                            ><input
+                              type="email"
+                              name="email-129"
+                              value=""
+                              size="40"
+                              class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email"
+                              aria-invalid="false" /></span
+                        ></label>
+                      </div>
+                      <div class="vc_col-sm-12">
+                        <label>
+                          Contact number<br />
+                          <span class="wpcf7-form-control-wrap tel-557"
+                            ><input
+                              type="tel"
+                              name="tel-557"
+                              value=""
+                              size="40"
+                              class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
+                              aria-invalid="false"
+                          /></span>
+                        </label>
+                      </div>
+                      <p>
+                        <input
+                          type="submit"
+                          value="Send"
+                          class="wpcf7-form-control wpcf7-submit"
+                        /><span class="ajax-loader"></span>
+                      </p>
+                      <div
+                        class="wpcf7-response-output wpcf7-display-none"
+                      ></div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane clearfix fade"
+                    id="home-insurance-challenge"
+                    role="tabpanel"
+                    aria-labelledby="home-insurance-challenge-tab"
+                  >
+                    <form action="">
+                      <div style="display: none">
+                        <input type="hidden" name="_wpcf7" value="2089" />
+                        <input
+                          type="hidden"
+                          name="_wpcf7_version"
+                          value="5.1.4"
+                        />
+                        <input
+                          type="hidden"
+                          name="_wpcf7_locale"
+                          value="en_US"
+                        />
+                        <input
+                          type="hidden"
+                          name="_wpcf7_unit_tag"
+                          value="wpcf7-f2089-p1400-o2"
+                        />
+                        <input
+                          type="hidden"
+                          name="_wpcf7_container_post"
+                          value="1400"
+                        />
+                      </div>
+                      <div class="row">
+                        <div class="vc_col-sm-6">
+                          <label class="texthome">
+                            Current Policy:<br />
+                            <span class="wpcf7-form-control-wrap radio-544"
+                              ><span
+                                class="wpcf7-form-control wpcf7-radio homeInsur"
+                                id="homeInsur"
+                                ><span class="wpcf7-list-item first"
+                                  ><input
+                                    type="radio"
+                                    name="radio-544"
+                                    value="Home owner"
+                                    checked="checked"
+                                  /><span class="wpcf7-list-item-label"
+                                    >Home owner</span
+                                  ></span
+                                ><span class="wpcf7-list-item last"
+                                  ><input
+                                    type="radio"
+                                    name="radio-544"
+                                    value="Landlord"
+                                  /><span class="wpcf7-list-item-label"
+                                    >Landlord</span
+                                  ></span
+                                ></span
+                              ></span
+                            >
+                          </label>
+                        </div>
+                        <div class="vc_col-sm-6">
+                          <label class="texthome">
+                            Building sums insured*<br />
+                            <span class="wpcf7-form-control-wrap number-984"
+                              ><input
+                                type="number"
+                                name="number-984"
+                                value=""
+                                class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                                aria-invalid="false"
+                            /></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="vc_col-sm-6">
+                          <p>
+                            <label class="texthome">
+                              Content sums insured<br />
+                              <span class="wpcf7-form-control-wrap number-633"
+                                ><input
+                                  type="number"
+                                  name="number-633"
+                                  value=""
+                                  class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                                  aria-invalid="false"
+                              /></span>
+                            </label>
+                          </p>
+                        </div>
+                        <div class="vc_col-sm-6">
+                          <p>
+                            <label class="texthome"
+                              >Current premium<br />
+                              <span class="wpcf7-form-control-wrap number-474"
+                                ><input
+                                  type="number"
+                                  name="number-474"
+                                  value=""
+                                  class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number currentprimium"
+                                  id="currentprimium"
+                                  aria-invalid="false"
+                              /></span>
+                            </label>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="vc_col-sm-6">
+                          <label class="texthome">
+                            Name<br />
+                            <span class="wpcf7-form-control-wrap text-403"
+                              ><input
+                                type="text"
+                                name="text-403"
+                                value=""
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text home_name"
+                                id="home_name"
+                                aria-invalid="false"
+                            /></span>
+                          </label>
+                        </div>
+                        <div class="vc_col-sm-6">
+                          <label class="texthome">
+                            Email address<br />
+                            <span class="wpcf7-form-control-wrap email-354"
+                              ><input
+                                type="email"
+                                name="email-354"
+                                value=""
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email home_email"
+                                id="home_email"
+                                aria-invalid="false" /></span
+                          ></label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="vc_col-sm-12">
+                          <p>
+                            <label class="texthome">
+                              Contact number<br />
+                              <span class="wpcf7-form-control-wrap tel-665"
+                                ><input
+                                  type="tel"
+                                  name="tel-665"
+                                  value=""
+                                  size="40"
+                                  class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel homeInsur_tel"
+                                  id="homeInsur_tel"
+                                  aria-invalid="false" /></span
+                            ></label>
+                          </p>
+                        </div>
+                      </div>
+                      <p>
+                        <input
+                          type="submit"
+                          value="Send"
+                          class="wpcf7-form-control wpcf7-submit"
+                        /><span class="ajax-loader"></span>
+                      </p>
+                      <div
+                        class="wpcf7-response-output wpcf7-display-none"
+                      ></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="blog">
+          <div class="row">
+            <div class="col-12">
+              <div class="section_title">
+                <h2>Blog</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="blog_card">
+                  <div class="blog_card_img">
+                    <img
+                      src="img/Financial-Advisor-questions-1200x800.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="blog_card_info">
+                    <a href="#" class="blog_heading"
+                      >Things to consider before hiring a financial advisor</a
+                    >
+                    <div class="d-flex justify-content-end">
+                      <a href="#" class="blog_read_more"> Read More </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="blog_card">
+                  <div class="blog_card_img">
+                    <img
+                      src="img/Financial-Advisor-in-Hounslow-investments-overview-990x660.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="blog_card_info">
+                    <a href="#" class="blog_heading"
+                      >Hiring a Financial Advisor | What are the benefits?</a
+                    >
+                    <div class="d-flex justify-content-end">
+                      <a href="#" class="blog_read_more"> Read More </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="blog_card">
+                  <div class="blog_card_img">
+                    <img
+                      src="img/Mortgage-Advisor-in-Hounslow1-990x660.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="blog_card_info">
+                    <a href="#" class="blog_heading"
+                      >Mortgage broker in Hounslow | What are the benifits?</a
+                    >
+                    <div class="d-flex justify-content-end">
+                      <a href="#" class="blog_read_more"> Read More </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4 col-md-6">
+                <div class="blog_card">
+                  <div class="blog_card_img">
+                    <img
+                      src="img/Financial-Advisor-questions-1200x800.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="blog_card_info">
+                    <a href="#" class="blog_heading">
+                      Professional Mortgage Broker | What is the secret?</a
+                    >
+                    <div class="d-flex justify-content-end">
+                      <a href="#" class="blog_read_more"> Read More </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- ======== Main Content end ======== -->
 
@@ -154,9 +632,9 @@
 
       <footer id="footer" class="footer">
         <div class="container">
-          <div class="row gy-4">
+          <div class="row gy-3">
             <div class="col-xl-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
+              <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="" class="img-fluid" />
               </a>
               <p>
@@ -170,14 +648,14 @@
                 or by contacting the FCA on 0800 111 6768.”
               </p>
             </div>
-            <div class="col-xl-2 col-6 footer-links">
+            <div class="col-xl-2 col-md-6 footer-links">
               <h4>Registered Address</h4>
               <p>
                 Crayon Financial Solutions Ltd 1 Agincourt Villas Uxbridge Road,
                 Hillingdon, Middlesex, England, UB10 0NX
               </p>
             </div>
-            <div class="col-xl-2 col-6 footer-links">
+            <div class="col-xl-2 col-md-6 footer-links">
               <h4>Office Address</h4>
               <p>
                 Crayon Financial Solutions Ltd 1 Agincourt Villas, Uxbridge
@@ -192,9 +670,7 @@
                 <a href="mailto:hello@crayonfs.com">hello@crayonfs.com</a>
               </p>
             </div>
-            <div
-              class="col-xl-3 col-md-12 footer-contact text-center text-md-start"
-            >
+            <div class="col-xl-3 col-md-12 footer-contact">
               <h4>Social</h4>
               <div class="social_links d-flex mt-4">
                 <a href="#"><i class="ri-facebook-fill"></i></a>
@@ -217,6 +693,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

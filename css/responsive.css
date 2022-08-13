@@ -31,7 +31,6 @@
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
-    z-index: 9999;
     margin-right: 10px;
   }
 }
@@ -45,5 +44,16 @@
   }
   .__main_navbar .navbar {
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero_content .hero_main_title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .hero_content .hero_sub_title {
+    font-size: 18px;
+    font-weight: 500;
   }
 }
