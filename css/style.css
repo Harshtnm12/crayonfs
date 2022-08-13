@@ -14,17 +14,9 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: Open Sans, Helvetica, Arial, Verdana, sans-serif;
+  font-family: Poppins, Helvetica, Arial, Verdana, sans-serif;
   color: #252525;
   font-weight: 400;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Poppins, sans-serif;
 }
 a,
 a:hover {
@@ -32,7 +24,7 @@ a:hover {
   color: inherit;
 }
 p {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 ol,
 ul {
@@ -89,6 +81,10 @@ section {
   left: calc(50% - 20px);
 }
 
+.section_head {
+  text-align: center;
+  padding-bottom: 30px;
+}
 /* --------- Main top header css start -------- */
 
 ._main_top_header {
@@ -99,7 +95,6 @@ section {
   margin-right: 1.2rem;
 }
 ._main_top_header ul > li > a {
-  font-family: Poppins, sans-serif;
   color: #fff;
   margin-left: 5px;
 }
@@ -145,7 +140,6 @@ section {
   padding: 8px 16px;
 }
 .__main_navbar .navbar ul > li > a {
-  font-family: Poppins, sans-serif;
   position: relative;
 }
 .__main_navbar .navbar ul > li > a::before {
@@ -165,7 +159,6 @@ section {
   width: 100%;
 }
 .navbar .others-option .option-item a.log-in {
-  font-family: Poppins, sans-serif;
   display: inline-block;
   padding: 15px 25px;
   background-color: var(--secondary);
@@ -191,7 +184,6 @@ section {
   position: relative;
 }
 .mobile_navigation ul > li > a {
-  font-family: Poppins, sans-serif;
   display: block;
   padding: 10px 0;
 }
@@ -199,7 +191,6 @@ section {
   color: var(--secondary);
 }
 .mobile_navigation .log-in {
-  font-family: Poppins, sans-serif;
   display: block;
   padding: 15px 25px;
   background-color: var(--secondary);
@@ -214,7 +205,6 @@ section {
   border: 0;
 }
 #mortgage ul.nav-tabs button.nav-link {
-  font-family: Poppins, sans-serif;
   border-radius: 0;
   border: 0;
   color: #fff;
@@ -259,13 +249,11 @@ section {
   -webkit-transform: translate(-50%, -50%);
 }
 .hero_content .hero_main_title {
-  font-family: Poppins, sans-serif;
   color: #fff;
   font-size: 36px;
   font-weight: 700;
 }
 .hero_content .hero_sub_title {
-  font-family: Poppins, sans-serif;
   color: #fff;
   font-size: 22px;
   font-weight: 700;
@@ -277,9 +265,9 @@ section {
   text-align: center;
   background-color: var(--primary);
   color: #fff;
-  font-family: Poppins, sans-serif;
   font-weight: 600;
 }
+/* ----- Old code ------- */
 
 #blog .blog_card {
   width: 100%;
@@ -302,7 +290,6 @@ section {
 }
 .blog_card_info a.blog_heading {
   display: block;
-  font-family: Poppins, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -314,12 +301,129 @@ section {
 }
 .blog_card_info a.blog_read_more {
   display: inline-block;
-  font-family: Poppins, sans-serif;
   padding: 12px 22px;
   background-color: var(--primary);
   color: #fff;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
+}
+/* ------ OLD code ------ */
+
+section#introduction {
+  background-color: #fff4f0;
+}
+#introduction .introduction_title {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#introduction .introduction_read_more {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 500;
+}
+#introduction .introduction_read_more img {
+  margin-left: 5px;
+}
+#find-mortgage .find_mortgage_left_side {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.find_mortgage_left_side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.find_mortgage_left_side .overlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.find_mortgage_left_side .overlay_content p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.find_mortgage_left_side .overlay_content a {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+}
+#find-mortgage .find_mortgage_right_side .find_mortgage_boxes {
+  background-color: #fff4f0;
+  padding: 24px;
+  border-radius: 12px;
+}
+.find_mortgage_right_side .find_mortgage_boxes:not(:last-child) {
+  margin-bottom: 15px;
+}
+.find_mortgage_right_side .find_mortgage_boxes h4 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+.find_mortgage_right_side .find_mortgage_boxes a {
+  display: inline-block;
+  font-weight: 500;
+}
+.find_mortgage_boxes a img {
+  margin-left: 5px;
+}
+
+section#mortgage-exp {
+  background-color: #fff4f0;
+  background-image: url("../img/figure-4.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#mortgage-exp ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+#mortgage-exp .explore_exp {
+  padding: 8px 22px;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 8px;
+}
+#statistics h2.stats_data {
+  font-weight: 600;
+  line-height: 1.5;
+}
+#statistics h5.stats_main {
+  font-size: 18px;
+}
+#statistics .explore_stats {
+  padding: 8px 22px;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 8px;
+}
+section#achievement {
+  background-color: #fff4f0;
+}
+#achievement h2 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+#achievement .register_with {
+  padding: 8px 22px;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 8px;
 }
 /* --------- Footer --------- */
 
