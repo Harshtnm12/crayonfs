@@ -85,6 +85,11 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
+.section_head h2 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+}
 /* --------- Main top header css start -------- */
 
 ._main_top_header {
@@ -372,12 +377,8 @@ section#introduction {
   margin-bottom: 15px;
 }
 .find_mortgage_right_side .find_mortgage_boxes h4 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
-}
-.find_mortgage_right_side .find_mortgage_boxes a {
-  display: inline-block;
-  font-weight: 500;
 }
 .find_mortgage_boxes a img {
   margin-left: 5px;
@@ -424,6 +425,33 @@ section#achievement {
   background-color: #252525;
   color: #fff;
   border-radius: 8px;
+}
+#mortgage-principle {
+  background-color: #fff4f0;
+  background-image: url('../img/figure-6.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#recognised .swiper {
+  width: 100%;
+  height: 100%;
+}
+#recognised .swiper .swiper-button-next,
+#recognised .swiper .swiper-button-prev {
+  width: 40px;  
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#recognised .swiper .swiper-button-next::after,
+#recognised .swiper .swiper-button-prev::after {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
 }
 /* --------- Footer --------- */
 

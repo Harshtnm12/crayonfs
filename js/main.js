@@ -22,5 +22,27 @@
       once: true,
       mirror: false,
     });
+    new Swiper("#recognised .mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // when window width is >= 992px
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
   });
 })();
