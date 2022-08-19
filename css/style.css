@@ -20,6 +20,7 @@ body {
 }
 a,
 a:hover {
+  transition: all 0.3s;
   text-decoration: none;
   color: inherit;
 }
@@ -102,37 +103,43 @@ section {
 .__main_navbar .navbar > ul {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin-right: auto;
 }
 .__main_navbar .navbar ul > li {
   position: relative;
   padding: 8px 16px;
 }
-.__main_navbar .navbar ul > li > a {
-  position: relative;
-}
-.__main_navbar .navbar ul > li > a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -6px;
-  left: 0;
-  background-color: var(--secondary);
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+.__main_navbar .navbar ul > li > a:hover {
+  color: var(--primary);
 }
 .__main_navbar .navbar ul > li > a:hover::before {
   visibility: visible;
   width: 100%;
 }
-.navbar .others-option .option-item a.log-in {
+.navbar .others-option .option-item a.log_in,
+.navbar .others-option .option-item a.apply_now {
   display: inline-block;
-  padding: 15px 25px;
-  background-color: var(--secondary);
+  margin: 0 3px;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+.navbar .others-option .option-item a.log_in {
+  border: 2px solid transparent;
+}
+.navbar .others-option .option-item a.apply_now {
+  padding: 12px 20px;
+  border: 2px solid var(--secondary);
+  color: var(--primary);
+}
+.navbar .others-option .option-item a.log_in:hover {
+  background-color: var(--primary);
   color: #fff;
-  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.navbar .others-option .option-item a.apply_now:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: transparent;
 }
 .__main_navbar.navbar_scroll {
   position: fixed;
@@ -392,7 +399,7 @@ section#achievement {
 }
 #mortgage-principle {
   background-color: #fff4f0;
-  background-image: url('../img/figure-6.png');
+  background-image: url("../img/figure-6.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -403,7 +410,7 @@ section#achievement {
 }
 #recognised .swiper .swiper-button-next,
 #recognised .swiper .swiper-button-prev {
-  width: 40px;  
+  width: 40px;
   height: 40px;
   background-color: #fff;
   border-radius: 50%;
