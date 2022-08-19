@@ -4,8 +4,10 @@
   });
   $(document).ready(function () {
     $(".mobile_nav_show").click(function () {
-      $(document.body).toggleClass("mobile_nav_active");
-      $(this).toggleClass("bi-x").toggleClass("bi-list");
+      $(document.body).addClass("mobile_nav_active");
+    });
+    $(".mobile_nav_hide").click(function () {
+      $(document.body).removeClass("mobile_nav_active");
     });
     $(window)
       .on("scroll", function () {
@@ -14,6 +16,9 @@
           : $(".__main_navbar").removeClass("navbar_scroll");
       })
       .scroll();
+    $("button.sub_menu_toggler").click(function () {
+      $(this).next(".sub_menu").toggleClass("active");
+    });
   });
   $(window).on("load", function () {
     AOS.init({

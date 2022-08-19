@@ -11,10 +11,10 @@
     top: 0;
     left: -100%;
     width: 100%;
-    max-width: 350px;
-    bottom: 0;
+    height: 100%;
     transition: 0.3s;
     z-index: 9997;
+    overflow: auto;
   }
   .mobile_nav_active {
     overflow: hidden;
@@ -32,6 +32,13 @@
     line-height: 0;
     transition: 0.5s;
     margin-right: 10px;
+  }
+  .mobile_nav_hide {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
   }
 }
 
