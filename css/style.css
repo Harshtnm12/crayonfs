@@ -90,42 +90,6 @@ section {
   font-weight: 600;
   line-height: 1.5;
 }
-/* --------- Main top header css start -------- */
-
-._main_top_header {
-  padding: 1rem;
-  background-color: var(--secondary);
-}
-._main_top_header ul > li:not(:last-child) {
-  margin-right: 1.2rem;
-}
-._main_top_header ul > li > a {
-  color: #fff;
-  margin-left: 5px;
-}
-._main_top_header ul > li > span {
-  color: #fff;
-  font-size: 18px;
-}
-._main_top_header ._top_header_social_info > li > a {
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  line-height: 32px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  font-size: 18px;
-  text-align: center;
-  color: var(--secondary);
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-._main_top_header ._top_header_social_info > li > a:hover {
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff;
-}
 
 /* ------- Main Navbar ------- */
 .__main_navbar {
