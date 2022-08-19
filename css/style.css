@@ -368,6 +368,11 @@ section {
 .blog_card_info a.blog_heading:hover {
   color: var(--primary);
 }
+.blog_card_info .blog_publish_date {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--primary);
+}
 .blog_card_info a.blog_read_more {
   display: inline-block;
   padding: 12px 22px;
