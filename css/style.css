@@ -20,9 +20,10 @@ body {
 }
 a,
 a:hover {
-  transition: all 0.3s;
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 p {
   margin: 0.8rem 0;
@@ -105,9 +106,9 @@ section {
   align-items: center;
   margin-right: auto;
 }
-.__main_navbar .navbar ul > li {
+.__main_navbar .navbar > ul > li {
   position: relative;
-  padding: 8px 16px;
+  padding: 20px 16px;
 }
 .__main_navbar .navbar ul > li > a:hover {
   color: var(--primary);
@@ -140,6 +141,50 @@ section {
   background-color: var(--primary);
   color: #fff;
   border-color: transparent;
+}
+.__main_navbar .navbar ul > li > ul.sub_menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  padding: 25px 25px 50px;
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.navbar ul > li > ul.sub_menu ul > li {
+  position: relative;
+  width: 225px;
+}
+.navbar ul > li > ul.sub_menu > li > span {
+  text-transform: uppercase;
+  padding: 8px 16px;
+  display: inline-block;
+  color: var(--primary);
+  margin-bottom: 8px;
+  user-select: none;
+  font-weight: 600;
+}
+.navbar ul > li > ul.sub_menu ul > li a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.navbar ul > li > ul.sub_menu ul > li a:hover {
+  background-color: #fff4f0;
+  color: inherit;
+  text-decoration: underline;
+}
+.__main_navbar .navbar ul > li:hover ul.sub_menu {
+  visibility: visible;
+  opacity: 1;
 }
 .__main_navbar.navbar_scroll {
   position: fixed;
