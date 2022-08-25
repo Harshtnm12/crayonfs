@@ -628,6 +628,42 @@ section#deposit {
   float: left;
   margin-right: 1rem;
 }
+/* --------- About Us --------- */
+.about_us_page_hero {
+  background-color: #0170b9;
+  padding: 75px 0;
+}
+.about_us_page_hero .about_us_hero_title {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about_us_page_hero .about_us_hero_sub_title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 25px;
+}
+#who-we-are h2 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+#why-now .why_now_img_wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+#why-now h2 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+#our-team .our_team_img {
+  background-image: url("../img/about-hero@3x-scaled.jpg");
+  min-height: 600px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* --------- Footer --------- */
 
 .footer {
