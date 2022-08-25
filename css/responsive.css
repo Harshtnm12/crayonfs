@@ -55,12 +55,17 @@
 }
 
 @media screen and (max-width: 575px) {
-  .hero_content .hero_main_title {
+  .website_main_page_hero .hero_content .hero_main_title {
     font-size: 28px;
     font-weight: 600;
   }
-  .hero_content .hero_sub_title {
+  .website_main_page_hero .hero_content .hero_sub_title {
     font-size: 18px;
     font-weight: 500;
+  }
+  .all_mortgage_hero_content .hero_main_title {
+    font-size: 36 px;
+    margin-bottom: 0;
+    font-weight: 700;
   }
 }

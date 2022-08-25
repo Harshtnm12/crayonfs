@@ -289,7 +289,7 @@ section {
 /* ---------- Website Main Content --------- */
 
 /* ---- Home Page -----  */
-.website_hero {
+.website_main_page_hero {
   width: 100%;
   height: 80vh;
   background-image: url("../img/coverpic.jpg");
@@ -298,7 +298,7 @@ section {
   background-position: center center;
   position: relative;
 }
-.website_hero::after {
+.website_main_page_hero::after {
   content: "";
   position: absolute;
   background-color: rgba(216, 156, 138, 0.5);
@@ -306,7 +306,7 @@ section {
   height: 100%;
   z-index: 1;
 }
-.website_hero .hero_content {
+.website_main_page_hero .hero_content {
   width: 100%;
   padding: 0 30px;
   position: absolute;
@@ -317,18 +317,18 @@ section {
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
 }
-.hero_content .hero_main_title {
+.website_main_page_hero .hero_content .hero_main_title {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
 }
-.hero_content .hero_sub_title {
+.website_main_page_hero .hero_content .hero_sub_title {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
 }
 
-.hero_content .explore_link {
+.website_main_page_hero .hero_content .explore_link {
   padding: 12px 28px;
   display: inline-block;
   text-align: center;
@@ -507,7 +507,7 @@ section#achievement {
   margin-top: 1.5rem;
 }
 #mortgage-principle .mortgage_principle_GetStarted {
-  display: inline-block ;
+  display: inline-block;
   padding: 8px 22px;
   background-color: #252525;
   color: #fff;
@@ -533,6 +533,100 @@ section#achievement {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary);
+}
+
+/* --------- All Mortgage Page --------- */
+.all_mortgage_page_hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/digital-mortgages-molo-london.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.all_mortgage_page_hero .all_mortgage_hero_content {
+  padding-top: 50px;
+}
+.all_mortgage_hero_content .hero_main_title {
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 48px;
+  margin-bottom: 1.5rem;
+  color: #16183b;
+}
+.all_mortgage_hero_content .hero_sub_title {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.all_mortgage_hero_content .explore_link {
+  background-color: #16183b;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 12px;
+}
+#learn-more .learn_more_card {
+  padding: 30px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  min-height: 100%;
+}
+#learn-more .learn_more_card h4 {
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+#learn-more .learn_more_card ul {
+  list-style-type: decimal;
+  padding: 0;
+  margin-left: 1.2rem;
+}
+#learn-more .learn_more_card ul > li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+/* --------- Buy a home --------- */
+.buy_a_home_page_hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/hero-05.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.buy_a_home_page_hero .buy_a_home_content {
+  padding-top: 50px;
+}
+.buy_a_home_content .hero_main_title {
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 48px;
+  margin-bottom: 1.5rem;
+  color: #16183b;
+}
+.buy_a_home_content .hero_sub_title {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.buy_a_home_content .explore_link {
+  background-color: #16183b;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 12px;
+}
+section#deposit {
+  background-color: #f7f7fb;
+}
+#deposit h2 {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 2.5rem;
+}
+#deposit ul > li {
+  margin-bottom: 1.5rem;
+}
+#deposit ul > li img {
+  float: left;
+  margin-right: 1rem;
 }
 /* --------- Footer --------- */
 
