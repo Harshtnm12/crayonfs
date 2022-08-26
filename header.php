@@ -26,7 +26,7 @@
         <div class="__main_navbar">
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="logo">
-                    <a href="index-7.html">
+                    <a href="#">
                         <img src="img/logo.png" class="img-fluid" alt="Logo" />
                     </a>
                 </div>
@@ -47,10 +47,10 @@
                                     <span>Buy a home</span>
                                     <ul>
                                         <li>
-                                            <a href="#">All Mortgage</a>
+                                            <a href="all-mortgage.php">All Mortgage</a>
                                         </li>
                                         <li>
-                                            <a href="#">Buy a home</a>
+                                            <a href="buy-a-home.php">Buy a home</a>
                                         </li>
                                         <li>
                                             <a href="#">First time buyers</a>
@@ -106,7 +106,7 @@
                                             <a href="#">How molo works</a>
                                         </li>
                                         <li>
-                                            <a href="#">About us</a>
+                                            <a href="about-us.php">About us</a>
                                         </li>
                                     </ul>
                                 </li>
