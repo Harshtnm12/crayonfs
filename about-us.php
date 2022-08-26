@@ -52,6 +52,38 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <div class="what_we_do_icon">
+                    <img src="img/Molo-home-icon.svg" alt="" class="img-fluid">
+                </div>
+                <h3>Molo Home</h3>
+                <p>Molo FlexLife is designed to make buying easier with a 95% loan and fixed-interest rate from 15 to 40 years that offers stability and certainty.</p>
+                <a href="#" class="what_we_do_explore">
+                    Molo Home
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <div class="what_we_do_icon">
+                    <img src="img/buy-to-let-icon.svg" alt="" class="img-fluid">
+                </div>
+                <h3>Buy-to-let</h3>
+                <p>Find your next property investment and buy it with a mortgage from Molo. You can buy as an individual or a ltd company. Plus, we have HMO and portfolio options.</p>
+                <a href="#" class="what_we_do_explore">
+                    Buy-to-let
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <div class="what_we_do_icon">
+                    <img src="img/intermediaries-icon.svg" alt="" class="img-fluid">
+                </div>
+                <h3>Intermediaries</h3>
+                <p>We work with top industry partners to offer our mortgages to a wider audience and give more people access to our products and services.</p>
+                <a href="#" class="what_we_do_explore">
+                    Intermediaries
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 <section id="our-team">
@@ -68,5 +100,47 @@
         </div>
     </div>
     <div class="our_team_img"></div>
+</section>
+<section id="awards">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_head">
+                    <h2>Awards</h2>
+                    <p>
+                        Celebrating our award-winning products and services
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/download-300x300.png" alt="" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <?php include 'footer.php'; ?>
